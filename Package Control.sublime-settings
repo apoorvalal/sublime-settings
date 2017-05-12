@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Boxy Theme",
+		"Colorsublime",
+		"Fortran",
+		"Git",
+		"Julia",
+		"LaTeXTools",
+		"Markdown Preview",
+		"Notes",
+		"Origami",
+		"Package Control",
+		"Pywin32",
+		"StataEditor",
+		"SublimeREPL",
+		"Text Pastry",
+		"WordCount"
+	]
+}

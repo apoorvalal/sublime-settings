@@ -1,0 +1,30 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_width": 6,
+	"caret_style": "blink",
+	"color_scheme": "Packages/Colorsublime - Themes/Tomorrow_Night_Bright.tmTheme",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"font_face": "Liberation Mono",
+	"font_options":
+	[
+		"directwrite",
+		"no_bold",
+		"no_italic"
+	],
+	"font_size": 10,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"SideBarEnhancements",
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"overlay_scroll_bars": "disabled",
+	"theme": "Boxy Tomorrow.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_wrap": true
+}

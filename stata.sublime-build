@@ -1,0 +1,6 @@
+{
+  "selector" : "source.stata"  ,
+  "cmd" : ["StataMP-64","/e do ", "$file"],
+  "shell" : true,
+  "working_dir" : "$file_dir"
+}
