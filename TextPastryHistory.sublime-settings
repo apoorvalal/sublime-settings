@@ -1,0 +1,46 @@
+{
+	"history":
+	[
+		{
+			"data":
+			{
+				"args":
+				{
+					"context": "selection",
+					"operator": null,
+					"pattern": ".a"
+				},
+				"command": "text_pastry_modify_selection",
+				"text": "filter .a"
+			},
+			"key": "6adbd1d7ea7ee8b541d6591128f083ac",
+			"label": "filter .a"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"context": "selection",
+					"operator": null,
+					"pattern": "pdf\">"
+				},
+				"command": "text_pastry_modify_selection",
+				"text": "filter pdf\">"
+			},
+			"key": "c42c40708947622ff1e774ef8774dc00",
+			"label": "filter pdf\">"
+		}
+	],
+	"last_command":
+	{
+		"args":
+		{
+			"context": "selection",
+			"operator": null,
+			"pattern": "pdf\">"
+		},
+		"command": "text_pastry_modify_selection",
+		"text": "filter pdf\">"
+	}
+}

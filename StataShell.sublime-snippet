@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+loc load_vars "*"
+loc filename "${1:inputfile}"
+use `load_vars' using "`filename'", clear
+// fancy estimation and prediction
+qui compress
+loc savefile "${2:outputfile}"
+save "`savefile'", replace
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>stata_shell</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.stata</scope>
+</snippet>
