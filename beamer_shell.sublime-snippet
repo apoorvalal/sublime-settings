@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+\documentclass{beamer}
+\usepackage{lmodern}% http://ctan.org/pkg/lm
+\usepackage[utf8]{inputenc}
+%Information to be included in the title page:
+\title{${1:Title}}
+\author{Apoorva Lal}
+\institute{Institute}
+\date{2017}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}
+\frametitle{${2:Frame-Title}}
+This is a text in first frame. This is a text in first frame. This is a text in first frame.
+\end{frame}
+\end{document}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>2BeamerShell</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>
