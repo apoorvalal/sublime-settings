@@ -13,11 +13,10 @@
 		"no_bold",
 		"no_italic"
 	],
-	"font_size": 10,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"SideBarEnhancements",
 		"Vintage"
 	],
 	"line_padding_bottom": 1,
