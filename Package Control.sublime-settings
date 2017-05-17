@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"Boxy Theme",
 		"Colorsublime",
 		"Fortran",
@@ -18,6 +19,7 @@
 		"PowerShell",
 		"Pywin32",
 		"StataEditor",
+		"SublimeLinter",
 		"SublimeREPL",
 		"Text Pastry",
 		"WordCount"
