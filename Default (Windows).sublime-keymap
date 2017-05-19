@@ -2,11 +2,9 @@
   {"keys": ["ctrl+alt+shift+f5"],"command": "copy_path"},
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
   {"keys": ["ctrl+shift+m"],"command": "insert", "args": {"characters": "%>%"}},
+  {"keys": ["ctrl+shift+alt+m"],"command": "insert", "args": {"characters": "%<>%"}},
   {"keys": ["ctrl+shift+="],"command": "insert", "args": {"characters": "<-"}},
   {"keys": ["ctrl+shift+-"],"command": "insert", "args": {"characters": "->"}},
-  { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },// restore default behaviour
-  { "keys": ["ctrl+shift+alt-t"], "command": "open_terminal" },
-  { "keys": ["ctrl+shift+alt+r"], "command": "open_terminal_project_folder" },
   // VIM Style movement
   // move
   { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
