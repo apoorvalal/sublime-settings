@@ -1,6 +1,7 @@
 [Tt]humbs.db
 *.DS_Store
 .SublimeREPLHistory/
+SublimeLinter/
 Package Control.last-run
 Package Control.ca-list
 Package Control.ca-bundle

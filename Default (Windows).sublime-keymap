@@ -2,14 +2,17 @@
   // to paste into terminal
   {"keys": ["ctrl+alt+shift+f5"],"command": "copy_path"},
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
+
   // R shortcuts
   {"keys": ["ctrl+shift+m"],"command": "insert", "args": {"characters": "%>%"}},
   {"keys": ["ctrl+shift+alt+m"],"command": "insert", "args": {"characters": "%<>%"}},
   {"keys": ["ctrl+shift+="],"command": "insert", "args": {"characters": "<-"}},
   {"keys": ["ctrl+shift+-"],"command": "insert", "args": {"characters": "->"}},
+
   // resolves Text-Pastry ANF conflict
   { "keys": ["ctrl+alt+t"], "command": "text_pastry_show_command_line", "args": { "text": "" } },
   { "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+
   // resolves StataEditor Multiple-selection conflict
   { "keys": ["ctrl+alt+d"], "command": "stata_execute", "args": {"Mode": "do", "Selection": "default"}, "context":
     [
@@ -18,7 +21,11 @@
   },
   { "keys": ["ctrl+d"], "command": "find_under_expand" },
 
-  // VIM Style movement
+  // a dumber + more useful tab switching
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+  // VIM Style hjkl movement
   // move
   { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
   { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}},
@@ -47,7 +54,7 @@
   { "keys": ["alt+shift+["], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true} },
   { "keys": ["alt+shift+]"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true} },
 
-  // additions for home and end
+  // additions for home and end (not vim + heresy)
   { "keys": ["alt+y"], "command": "move_to", "args": {"to": "bol", "extend": false} },
   { "keys": ["alt+o"], "command": "move_to", "args": {"to": "eol", "extend": false} },
   { "keys": ["alt+shift+y"], "command": "move_to", "args": {"to": "bol", "extend": true} },
