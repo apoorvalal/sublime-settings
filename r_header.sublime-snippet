@@ -1,7 +1,12 @@
 <snippet>
 	<content><![CDATA[
 rm(list=ls())
-source('C:/Users/apoor/Desktop/projects/housekeeping/al_functions.R')
+user_name = Sys.info()['user']
+temp_path = Sys.getenv()['TMP']
+load_or_install <- function(pkg) { loader = unlist(lapply(pkg,require,character.only=TRUE)); ins=pkg[!loader]; if(length(ins)!=0){install.packages(ins,repos='https://cloud.r-project.org'); lapply(ins,require,character.only=TRUE); }; rm(pkg,ins,loader)}
+home = "${1:homedir}"
+setwd(home)
+load_or_install(c('tidyverse','${2:lib2}'))
 sessionInfo()
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
