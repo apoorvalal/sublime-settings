@@ -19,14 +19,14 @@
 	[
 		"Vintage"
 	],
-	    "rulers":
-    [
-        85,
-        120
-    ],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"overlay_scroll_bars": "disabled",
+	"rulers":
+	[
+		85,
+		120
+	],
 	"theme": "Boxy Tomorrow.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,

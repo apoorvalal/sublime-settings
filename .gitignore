@@ -1,17 +1,16 @@
-[Tt]humbs.db
-*.DS_Store
+###################
+# directories	  #
+###################
 .SublimeREPLHistory/
 SublimeLinter/
-Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.system-ca-bundle
 Package Control.cache/
 Package Control.ca-certs/
 
 ###################
-# compiled source #
+# extensions	  #
 ###################
+[Tt]humbs.db
+*.DS_Store
 *.com
 *.class
 *.dll
@@ -21,6 +20,15 @@ Package Control.ca-certs/
 *.cache
 *.suo
 *.pdf
+###########################
+# Package Control stuff	  #
+###########################
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
 Package Control.merged-ca-bundle
 Package Control.user-ca-bundle
 oscrypto-ca-bundle.crt
+
+SBSCompare.tmTheme

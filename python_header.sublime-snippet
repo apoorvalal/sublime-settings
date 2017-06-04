@@ -4,10 +4,10 @@ import os,sys,math,glob
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-os.chdir('C:/Users/alal/Desktop/Research/')
+os.chdir('${1:wdir}')
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>pyheader_lal</tabTrigger>
+	<tabTrigger>PyHeader</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>
