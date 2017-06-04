@@ -2,8 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 6,
 	"caret_style": "blink",
-	"color_scheme":
-	"Packages/Colorsublime - Themes/Tomorrow_Night_Bright.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Tomorrow_Night_Bright.tmTheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -20,6 +19,11 @@
 	[
 		"Vintage"
 	],
+	    "rulers":
+    [
+        85,
+        120
+    ],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"overlay_scroll_bars": "disabled",
