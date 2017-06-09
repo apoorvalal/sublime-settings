@@ -1,0 +1,5 @@
+{
+    "enable_mathjax": true,
+    "enable_highlight": false,    "enabled_parsers": ["markdown", "github"],
+
+}
