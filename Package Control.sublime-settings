@@ -12,6 +12,7 @@
 		"Colorsublime",
 		"Compare Side-By-Side",
 		"Fortran",
+		"Gist",
 		"Git",
 		"GitGutter",
 		"Julia",
@@ -28,6 +29,7 @@
 		"StataEditor",
 		"SublimeREPL",
 		"Text Pastry",
+		"UnicodeMath",
 		"WordCount"
 	]
 }
