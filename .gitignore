@@ -31,4 +31,8 @@ Package Control.merged-ca-bundle
 Package Control.user-ca-bundle
 oscrypto-ca-bundle.crt
 
+###########################
+#		 Files			  #
+###########################
+Gist.sublime-settings
 SBSCompare.tmTheme
