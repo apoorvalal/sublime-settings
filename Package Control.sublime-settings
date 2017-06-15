@@ -5,10 +5,10 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AdvancedNewFile",
 		"All Autocomplete",
 		"AutoHotkey",
-		"Boxy Theme",
 		"Colorsublime",
 		"Compare Side-By-Side",
 		"Fortran",
@@ -20,6 +20,7 @@
 		"Markdown Extended",
 		"Markdown Preview",
 		"MarkdownEditing",
+		"Material Theme",
 		"Notes",
 		"Origami",
 		"Package Control",
