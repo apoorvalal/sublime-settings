@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+dtimer on  ${1:number}
+${2:code}
+dtimer off ${1:number}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>StataTimed</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.stata</scope>
+</snippet>

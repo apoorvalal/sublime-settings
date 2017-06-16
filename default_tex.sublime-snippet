@@ -9,6 +9,9 @@
 \setlength{\oddsidemargin}{-0.25in}
 \usepackage{amsfonts}
 \usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \begin{document}
 \begin{flushright}
 Your Name
