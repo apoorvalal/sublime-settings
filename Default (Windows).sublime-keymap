@@ -4,10 +4,26 @@
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
 
   // R shortcuts
-  {"keys": ["ctrl+shift+m"],"command": "insert", "args": {"characters": "%>%"}},
-  {"keys": ["ctrl+shift+alt+m"],"command": "insert", "args": {"characters": "%<>%"}},
-  {"keys": ["ctrl+shift+="],"command": "insert", "args": {"characters": "<-"}},
-  {"keys": ["ctrl+shift+-"],"command": "insert", "args": {"characters": "->"}},
+  {"keys": ["ctrl+shift+m"],"command": "insert",
+    "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+  "args": {"characters": "%>%"}},
+  {"keys": ["ctrl+shift+alt+m"],"command": "insert",
+    "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+  "args": {"characters": "%<>%"}},
+  {"keys": ["ctrl+shift+="],"command": "insert",
+   "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+   "args": {"characters": "<-"}},
+  {"keys": ["ctrl+shift+-"],"command": "insert",
+   "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+   "args": {"characters": "->"}},
 
   // resolves Text-Pastry ANF conflict
   { "keys": ["ctrl+alt+t"], "command": "text_pastry_show_command_line", "args": { "text": "" } },
