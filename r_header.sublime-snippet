@@ -4,9 +4,10 @@
 rm(list=ls())
 user_name = Sys.info()['user']
 temp_path = Sys.getenv()['TMP']
-wants <- c("tidyverse") # '${1:lib2}'))
+wants <- c("tidyverse") #, "${1:lib2}")
 has   <- wants %in% rownames(installed.packages())
 if(any(!has)) install.packages(wants[!has])
+lapply(wants,require,character.only=TRUE)
 ####################################################
 sessionInfo()
 ]]></content>

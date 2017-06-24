@@ -16,7 +16,7 @@
 		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 15,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -41,8 +41,8 @@
 		120
 	],
 	"tab_size": 4,
-    "translate_tabs_to_spaces": true,
 	"theme": "Material-Theme-Darker.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"ui_fix_tab_labels": true,
 	"ui_font_size_small": true,
