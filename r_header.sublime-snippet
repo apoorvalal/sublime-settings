@@ -1,12 +1,13 @@
 <snippet>
 	<content><![CDATA[
+####################################################
 rm(list=ls())
 user_name = Sys.info()['user']
 temp_path = Sys.getenv()['TMP']
-load_or_install <- function(pkg) { loader = unlist(lapply(pkg,require,character.only=TRUE)); ins=pkg[!loader]; if(length(ins)!=0){install.packages(ins,repos='https://cloud.r-project.org'); lapply(ins,require,character.only=TRUE); }; rm(pkg,ins,loader)}
-home = "${1:homedir}"
-setwd(home)
-load_or_install(c('tidyverse','${2:lib2}'))
+wants <- c("tidyverse") # '${1:lib2}'))
+has   <- wants %in% rownames(installed.packages())
+if(any(!has)) install.packages(wants[!has])
+####################################################
 sessionInfo()
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
