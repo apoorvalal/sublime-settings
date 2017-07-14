@@ -2,7 +2,8 @@
   // to paste into terminal
   {"keys": ["ctrl+alt+shift+f5"],"command": "copy_path"},
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
-
+  // snake case
+  { "keys": ["shift+space"], "command": "insert", "args": {"characters": "_"} },
   // R shortcuts
   {"keys": ["ctrl+shift+m"],"command": "insert",
     "context" : [{
@@ -75,6 +76,9 @@
   { "keys": ["alt+o"], "command": "move_to", "args": {"to": "eol", "extend": false} },
   { "keys": ["alt+shift+y"], "command": "move_to", "args": {"to": "bol", "extend": true} },
   { "keys": ["alt+shift+o"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+  //  vim style delete
+  { "keys": ["alt+x"], "command": "left_delete" },
+  { "keys": ["alt+shift+x"], "command": "right_delete" },
   // markdown
   { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}
 ]
