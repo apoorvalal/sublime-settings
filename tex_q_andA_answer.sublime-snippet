@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+\begin{answered}
+${1: answer 1}
+\end{answered}
+]]></content>
+<tabTrigger>Ans</tabTrigger>
+    <scope>text.tex.latex</scope>
+</snippet>
+
