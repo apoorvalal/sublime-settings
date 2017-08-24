@@ -37,3 +37,6 @@ oscrypto-ca-bundle.crt
 Gist.sublime-settings
 SBSCompare.tmTheme
 TextPastryHistory.sublime-settings
+SublimeREPL.sublime-settings
+LaTexTools.sublime-settings
+
