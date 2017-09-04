@@ -76,6 +76,8 @@
   { "keys": ["alt+o"], "command": "move_to", "args": {"to": "eol", "extend": false} },
   { "keys": ["alt+shift+y"], "command": "move_to", "args": {"to": "bol", "extend": true} },
   { "keys": ["alt+shift+o"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+  { "keys": ["alt+r"], "command": "find_under" },
+  { "keys": ["shift+alt+r"], "command": "find_under_prev" },
   //  vim style delete
   { "keys": ["alt+x"], "command": "right_delete" },
   { "keys": ["alt+shift+x"], "command": "left_delete" },
