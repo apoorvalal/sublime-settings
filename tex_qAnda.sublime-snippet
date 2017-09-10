@@ -1,9 +1,13 @@
 <snippet>
     <content><![CDATA[
 \begin{QandA}
-   \item ${1:question 1}
+    \item ${1:question1}
         \begin{answered}
-        ${2: answer 1}
+            ${2:answer1}
+        \end{answered}
+    \item question2
+        \begin{answered}
+            answer2
         \end{answered}
 \end{QandA}
 ]]></content>

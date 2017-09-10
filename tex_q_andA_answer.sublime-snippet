@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 \begin{answered}
-${1: answer 1}
+    ${1:answer1}
 \end{answered}
 ]]></content>
 <tabTrigger>Ans</tabTrigger>
