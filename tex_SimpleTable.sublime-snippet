@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+\begin{tabular}{c|c|c}
+\textbf{P} &
+\textbf{R} &
+\textbf{S} \\
+\hline
+T & F & T \\
+F & F & F \\
+\hline
+\end{tabular}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>SimpleTable</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.tex.latex</scope>
+</snippet>
