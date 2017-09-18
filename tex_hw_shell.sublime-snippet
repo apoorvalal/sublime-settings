@@ -16,7 +16,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{enumitem}
-\pagestyle{empty}
+\usepackage{mathpazo}
 
 \begin{document}
 \begin{flushright}

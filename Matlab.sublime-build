@@ -1,0 +1,8 @@
+{
+    // Change path to matlab.exe per local settings
+    "cmd": ["C:/Program Files/MATLAB/R2017a/bin/matlab.exe",
+            "-nodesktop", "-nosplash",
+            "-r", "\"run('$file')\""],
+    "selector": "source.m",
+    "working_dir": "${project_path:${folder}}"
+}
