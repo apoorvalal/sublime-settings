@@ -4,6 +4,7 @@
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
   // snake case
   { "keys": ["shift+space"], "command": "insert", "args": {"characters": "_"} },
+  //////////////////////////////////
   // R shortcuts
   {"keys": ["ctrl+shift+m"],"command": "insert",
     "context" : [{
@@ -25,7 +26,24 @@
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
    "args": {"characters": "->"}},
+  // LaTex shortcuts
+  // Fractions
+  { "keys": ["ctrl+\\"],"command": "insert",
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "args": {"characters": "\\frac{}{}"}},
+  // Exponentiate
+  { "keys": ["ctrl+["],"command": "insert",
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "args": {"characters": "^{}"}},
+  // Subscript
+  { "keys": ["ctrl+]"],"command": "insert",
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "args": {"characters": "_{}"}},
 
+  //////////////////////////////////
   // resolves Text-Pastry ANF conflict
   { "keys": ["ctrl+alt+t"], "command": "text_pastry_show_command_line", "args": { "text": "" } },
   { "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},

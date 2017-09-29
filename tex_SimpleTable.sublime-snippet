@@ -3,10 +3,10 @@
 \begin{tabular}{c|c|c}
 \textbf{P} &
 \textbf{R} &
-\textbf{S} \\
+\textbf{S} \\\\
 \hline
-T & F & T \\
-F & F & F \\
+T & F & T \\\\
+F & F & F \\\\
 \hline
 \end{tabular}
 
