@@ -4,6 +4,7 @@
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
   // snake case
   { "keys": ["shift+space"], "command": "insert", "args": {"characters": "_"} },
+  { "keys": ["f12"], "command": "reindent"},
   //////////////////////////////////
   // R shortcuts
   {"keys": ["ctrl+shift+m"],"command": "insert",
@@ -31,17 +32,36 @@
   { "keys": ["ctrl+\\"],"command": "insert",
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-    "args": {"characters": "\\frac{}{}"}},
+    "command": "insert_snippet",
+    "args": {"contents": "\\frac{${1:above}}{${2:below}}"}},
+
   // Exponentiate
   { "keys": ["ctrl+["],"command": "insert",
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-    "args": {"characters": "^{}"}},
+    "command": "insert_snippet",
+    "args": {"contents": "${1:above}^{${2:below}}"}},
+
   // Subscript
-  { "keys": ["ctrl+]"],"command": "insert",
+  { "keys": ["ctrl+]"],
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-    "args": {"characters": "_{}"}},
+    "command": "insert_snippet",
+    "args": {"contents": "${1:above}_{${2:below}}"}},
+
+  // Big Parentheses
+  { "keys": ["ctrl+."],
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "\\left( \\frac{${1:above}}{${2:below}} \\right)"}},
+
+  // general overset/tilde/bar/hat
+  {"keys": ["ctrl+shift++\\"],
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "${1:above}{${2:below}}"}},
 
   //////////////////////////////////
   // resolves Text-Pastry ANF conflict
