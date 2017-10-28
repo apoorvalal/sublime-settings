@@ -1,0 +1,12 @@
+{
+	"prog": "conemu",
+	"python":
+	{
+		"bracketed_paste_mode": false,
+		"prog": "cmder"
+	},
+	"r":
+	{
+		"prog": "conemu"
+	}
+}

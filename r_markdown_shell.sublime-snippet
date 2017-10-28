@@ -1,0 +1,36 @@
+<snippet>
+    <content><![CDATA[
+---
+title: "${1:Header}"
+author: "Apoorva Lal"
+date: "October 13, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## ${2:Section_Header}
+
+```{r header}
+####################################################
+rm(list=ls())
+user_name = Sys.info()['user']
+temp_path = Sys.getenv()['TMP']
+if (require('LalRUtils')==F) {
+    library(devtools)
+    devtools::install_github("apoorvalal/LalRUtils")
+}
+load_or_install(c('tidyverse','Hmisc')) #, "lib2")
+sessionInfo()
+####################################################
+```
+
+####################################################
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>RMDHeader</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.r</scope>
+</snippet>
