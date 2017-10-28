@@ -16,7 +16,7 @@
 		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -34,6 +34,10 @@
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
+	"mdpopups.sublime_user_lang_map":
+	{
+	},
+	"mdpopups.use_sublime_highlighter": true,
 	"overlay_scroll_bars": "disabled",
 	"rulers":
 	[

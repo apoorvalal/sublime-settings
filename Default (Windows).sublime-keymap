@@ -12,7 +12,7 @@
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
   "args": {"characters": "%>%"}},
-  {"keys": ["ctrl+shift+alt+m"],"command": "insert",
+  {"keys": ["ctrl+shift+\\"],"command": "insert",
     "context" : [{
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
