@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 \documentclass{article}
-\usepackage{C:/Users/alal/dotfiles/math_misc}
+\usepackage{"C:/Users/alal/Google\space Drive/0_HW/math_misc"}
 \begin{document}
 \begin{flushright}
 Your Name
