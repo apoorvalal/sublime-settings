@@ -1,6 +1,8 @@
 {
 	"extensions":
 	[
-		"m","mat"
+		"m",
+		"mat",
+		"mod"
 	]
 }
