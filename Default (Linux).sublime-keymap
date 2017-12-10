@@ -1,0 +1,125 @@
+[
+  // to paste into terminal
+  {"keys": ["ctrl+alt+shift+f5"],"command": "copy_path"},
+  {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
+  // snake case
+  { "keys": ["shift+space"], "command": "insert", "args": {"characters": "_"} },
+  { "keys": ["f12"], "command": "reindent"},
+  //////////////////////////////////
+  // R shortcuts
+  {"keys": ["ctrl+shift+m"],"command": "insert",
+    "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+  "args": {"characters": "%>%"}},
+  {"keys": ["ctrl+shift+\\"],"command": "insert",
+    "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+  "args": {"characters": "%<>%"}},
+  {"keys": ["ctrl+shift+="],"command": "insert",
+   "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+   "args": {"characters": "<-"}},
+  {"keys": ["ctrl+shift+-"],"command": "insert",
+   "context" : [{
+      "key" : "selector", "operator": "equal", "operand": "source.r"
+    }],
+   "args": {"characters": "->"}},
+  // LaTex shortcuts
+  // Fractions
+  { "keys": ["ctrl+\\"],"command": "insert",
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "\\frac{${1:above}}{${2:below}}"}},
+
+  // Exponentiate
+  { "keys": ["ctrl+["],"command": "insert",
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "${1:above}^{${2:below}}"}},
+
+  // Subscript
+  { "keys": ["ctrl+]"],
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "${1:above}_{${2:below}}"}},
+
+  // Big Parentheses
+  { "keys": ["ctrl+."],
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "\\left( \\frac{${1:above}}{${2:below}} \\right)"}},
+
+  // general overset/tilde/bar/hat
+  {"keys": ["ctrl+shift++\\"],
+    "context":  [
+      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+    "command": "insert_snippet",
+    "args": {"contents": "${1:above}{${2:below}}"}},
+
+  //////////////////////////////////
+  // resolves Text-Pastry ANF conflict
+  { "keys": ["ctrl+alt+t"], "command": "text_pastry_show_command_line", "args": { "text": "" } },
+  { "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+
+  // resolves StataEditor Multiple-selection conflict
+  { "keys": ["ctrl+alt+d"], "command": "stata_execute", "args": {"Mode": "do", "Selection": "default"}, "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.stata" }
+    ]
+  },
+  { "keys": ["ctrl+d"], "command": "find_under_expand" },
+
+  // a dumber + more useful tab switching
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+  // VIM Style hjkl movement
+  // move
+  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
+  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}},
+  { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true}},
+  { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false}},
+
+  // move and select
+  { "keys": ["alt+shift+k"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true}},
+  { "keys": ["alt+shift+j"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true}},
+  { "keys": ["alt+shift+l"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true}},
+  { "keys": ["alt+shift+h"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true}},
+
+  // move by words
+  { "keys": ["alt+w"], "command": "move", "args": {"by": "words", "forward": true}},
+  { "keys": ["alt+b"], "command": "move", "args": {"by": "words", "forward": false}},
+
+  // move and select by words
+  { "keys": ["alt+shift+w"], "command": "move", "args": {"by": "words", "forward": true, "extend": true}},
+  { "keys": ["alt+shift+b"], "command": "move", "args": {"by": "words", "forward": false, "extend": true}},
+
+  // move by paragraph
+  { "keys": ["alt+["], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+  { "keys": ["alt+]"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
+
+  // move and select by paragraph
+  { "keys": ["alt+shift+["], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true} },
+  { "keys": ["alt+shift+]"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true} },
+
+  // additions for home and end (not vim + heresy)
+  { "keys": ["alt+y"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["alt+o"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["alt+shift+y"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+  { "keys": ["alt+shift+o"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+  { "keys": ["alt+r"], "command": "find_under" },
+  { "keys": ["shift+alt+r"], "command": "find_under_prev" },
+  //  vim style delete
+  { "keys": ["alt+x"], "command": "right_delete" },
+  { "keys": ["alt+shift+x"], "command": "left_delete" },
+  // markdown
+  { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}
+]
+

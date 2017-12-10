@@ -7,20 +7,19 @@
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
-	"font_face": "InputMonoCompressed",
+	"font_face": "Input Mono Condensed",
 	"font_options":
 	[
-		"directwrite",
 		"no_bold",
 		"no_italic",
-		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 10,
+	"font_size": 12,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
+		"Pywin32",
+		"StataEditor",
 		"Vintage"
 	],
 	"line_padding_bottom": 1,

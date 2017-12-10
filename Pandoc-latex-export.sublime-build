@@ -1,5 +1,0 @@
-{
-    "shell_cmd": "pandoc -o \"$file.pdf\" \"$file\"",
-    "selector": "text.html.markdown",
-    "path": "/usr/texbin:$PATH"
-}

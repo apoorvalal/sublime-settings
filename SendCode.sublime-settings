@@ -1,18 +1,3 @@
 {
-	"julia":
-	{
-		"bracketed_paste_mode": true,
-		"prog": "conemu"
-	},
-	"prog": "conemu",
-	"python":
-	{
-		"bracketed_paste_mode": false,
-		"prog": "cmder"
-	},
-	"r":
-	{
-		"prog": "conemu"
-	},
-	"conemuc": "C:\\Users\\apoor\\Downloads\\Programs\\cmder\\vendor\\conemu-maximus5\\ConEmu\\ConEmuC.exe"
+
 }
