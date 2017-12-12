@@ -2,7 +2,7 @@
     <content><![CDATA[
 \documentclass{article}
 % \usepackage{"C:/Users/alal/Google\space Drive/0_HW/math_misc"}
-% \usepackage{"/home/alal/googledrive/0_HW/math_misc"}
+\usepackage{"/home/alal/googledrive/0_HW/math_misc"}
 \begin{document}
 \begin{flushright}
 Your Name
