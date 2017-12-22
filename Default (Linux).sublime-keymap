@@ -8,6 +8,20 @@
       ]
   },
 
+  { "keys": ["ctrl+space"], "command": "exit_insert_mode",
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": false },
+          { "key": "setting.is_widget", "operand": false }
+      ]
+  },
+
+  { "keys": ["ctrl+space"], "command": "enter_insert_mode",
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": true },
+      ]
+  },
   // to paste into terminal
   {"keys": ["ctrl+alt+shift+f5"],"command": "copy_path"},
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
