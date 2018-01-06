@@ -4,11 +4,8 @@ import os,sys,glob,pip
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-def install(package):
-	pip.main(['install', package])
 
 # os.chdir('${1:wdir}')
-# install('${2:package}')
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>PyHeader</tabTrigger>
