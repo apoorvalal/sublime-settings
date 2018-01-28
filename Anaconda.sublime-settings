@@ -1,5 +1,5 @@
 {
-    "anaconda_linter_mark_style": "squiggly_underline",
+    "anaconda_linting": false,
     // Maximum line length for pep8
     "pep8_max_line_length": 90,
 }

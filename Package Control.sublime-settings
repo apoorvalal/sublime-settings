@@ -2,8 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Pywin32",
-		"StataEditor"
 	],
 	"installed_packages":
 	[
@@ -32,12 +30,14 @@
 		"Pandoc",
 		"Path Tools",
 		"PowerShell",
-		"Pywin32",
+		"PyYapf Python Formatter",
 		"R-Box",
 		"SendCode",
 		"SideBarEnhancements",
-		"StataEditor",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
 		"SublimeREPL",
+		"TerminalView",
 		"Text Pastry",
 		"UnicodeMath",
 		"WordCount"
