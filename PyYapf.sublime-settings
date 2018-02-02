@@ -1,3 +1,5 @@
 {
-  "yapf_command": "/home/alal/anaconda3/bin/yapf"
+  "yapf_command": "/home/alal/anaconda3/bin/yapf",
+  "on_save": true
+
 }
