@@ -1,4 +1,5 @@
 [
+  //////////////////////////////////
   // vintage mode escape
   { "keys": ["j", "j"], "command": "exit_insert_mode",
       "context":
@@ -7,6 +8,7 @@
           { "key": "setting.is_widget", "operand": false }
       ]
   },
+  // ctrl+space for everything
   { "keys": ["ctrl+space"], "command": "exit_insert_mode",
       "context":
       [
@@ -20,6 +22,14 @@
           { "key": "setting.command_mode", "operand": true },
       ]
   },
+  { "keys": ["ctrl+space"], "command": "exit_visual_mode", "args": {"toggle": true},
+    "context":
+    [
+      {"key": "setting.command_mode"},
+      {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+    ]
+  },
+  // vertical split cursor fix for ubuntu
   { "keys": ["alt+ctrl+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+ctrl+down"], "command": "select_lines", "args": {"forward": true} },
   // to paste into terminal
@@ -28,6 +38,7 @@
   // snake case
   { "keys": ["shift+space"], "command": "insert", "args": {"characters": "_"} },
   { "keys": ["f12"], "command": "reindent"},
+  //////////////////////////////////
   // R shortcuts
   {"keys": ["ctrl+shift+m"],"command": "insert",
     "context" : [{
@@ -49,6 +60,7 @@
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
    "args": {"characters": "->"}},
+  //////////////////////////////////
   // LaTex shortcuts
   // Fractions
   { "keys": ["ctrl+\\"],"command": "insert",
