@@ -7,7 +7,7 @@
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
-	"font_face": "InputMonoCompressed",
+	"font_face": "Input",
 	"font_options":
 	[
 		"directwrite",
@@ -16,12 +16,10 @@
 		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
-		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -42,6 +40,7 @@
 	"overlay_scroll_bars": "disabled",
 	"rulers":
 	[
+		70,
 		85,
 		120
 	],

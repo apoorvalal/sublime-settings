@@ -1,4 +1,36 @@
 [
+  // wrap text at 70 lines
+  { "keys": ["alt+q"], "command": "wrap_lines_plus", "args": {"width": 70}},
+  //////////////////////////////////
+  // vintage mode escape
+  { "keys": ["j", "j"], "command": "exit_insert_mode",
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": false },
+          { "key": "setting.is_widget", "operand": false }
+      ]
+  },
+  // ctrl+space for everything
+  { "keys": ["ctrl+space"], "command": "exit_insert_mode",
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": false },
+          { "key": "setting.is_widget", "operand": false }
+      ]
+  },
+  { "keys": ["ctrl+space"], "command": "enter_insert_mode",
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": true },
+      ]
+  },
+  { "keys": ["ctrl+space"], "command": "exit_visual_mode", "args": {"toggle": true},
+    "context":
+    [
+      {"key": "setting.command_mode"},
+      {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+    ]
+  },
   // to paste into terminal
   {"keys": ["ctrl+alt+shift+f5"],"command": "copy_path"},
   {"keys": ["ctrl+alt+shift+f6"],"command": "open_file", "args": {"file" : "$file_path/$file_base_name.log"}},
