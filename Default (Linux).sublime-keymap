@@ -1,4 +1,6 @@
 [
+    // wrap text at 70 lines
+  // { "keys": ["alt+q"], "command": "wrap_lines_plus","args": {"width": 70}},
   //////////////////////////////////
   // vintage mode escape
   { "keys": ["j", "j"], "command": "exit_insert_mode",
