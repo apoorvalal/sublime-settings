@@ -63,13 +63,17 @@
     }],
    "args": {"characters": "->"}},
   //////////////////////////////////
-  // LaTex shortcuts
+  // LaTex shortcuts (double to support markdown, can't get
+  // regex to work)
+
   // Fractions
   { "keys": ["ctrl+\\"],"command": "insert",
     "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+      {"key": "selector",
+      "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
     "args": {"contents": "\\frac{${1:above}}{${2:below}}"}},
+
   // Exponentiate
   { "keys": ["ctrl+["],"command": "insert",
     "context":  [

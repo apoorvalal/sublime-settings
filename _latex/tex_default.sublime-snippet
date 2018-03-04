@@ -1,20 +1,8 @@
 <snippet>
 	<content><![CDATA[
 \documentclass{article}
-\newcommand{\updateinfo}[1][\today]{\par\hfill{\scriptsize Last updated on #1}}
-
-\setlength{\textheight}{9in}
-\setlength{\topmargin}{-0.5in}
-\setlength{\textwidth}{7in}
-\setlength{\evensidemargin}{-0.25in}
-\setlength{\oddsidemargin}{-0.25in}
-\usepackage{amsfonts}
-\usepackage{mathtools}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{"/home/alal/tex_templates/lal_default"}
 \begin{document}
-
 \title{Title}
 \author{Name}
 \date{Today}

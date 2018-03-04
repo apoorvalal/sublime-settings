@@ -9,7 +9,7 @@ output: pdf_document
 fontsize: 12pt
 header-includes:
     - \usepackage{fancyhdr}
-    - \usepackage{"/home/alal/GoogleDrive/0_HW/lal_default"}
+    - \usepackage{"/home/alal/tex_templates/lal_default"}
     - \pagestyle{fancy}
     - \lhead[CO,LE]{${2:Apoorva Lal}, ${1:TitleOfDocument}}
 ---
