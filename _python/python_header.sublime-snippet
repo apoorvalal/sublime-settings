@@ -1,11 +1,21 @@
 <snippet>
 	<content><![CDATA[
-import os,sys,glob,pip
+#%%
+import os
+import sys
+import glob
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+# %matplotlib inline
+# run for jupyter notebook
+# from IPython.core.interactiveshell import InteractiveShell
+# InteractiveShell.ast_node_interactivity = 'all'
+#%%
 
-# os.chdir('${1:wdir}')
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>PyHeader</tabTrigger>
