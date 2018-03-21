@@ -2,18 +2,16 @@
 	<content><![CDATA[
 ####################################################
 rm(list=ls())
-user_name = Sys.info()['user']
-temp_path = Sys.getenv()['TMP']
 if (require('LalRUtils')==F) {
     library(devtools)
     devtools::install_github("apoorvalal/LalRUtils")
 }
-load_or_install(c('tidyverse','Hmisc')) #, "${1:lib2}")
+load_or_install(c('tidyverse','magrittr','Hmisc','data.table')) #, "${1:lib2}"))
 sessionInfo()
 ####################################################
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>RHeader</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+	<scope>source.r,text.html.markdown.rmarkdown</scope>
 </snippet>

@@ -1,16 +1,6 @@
 <snippet>
     <content><![CDATA[
----
-title: "${1:Header}"
-author: "Apoorva Lal"
-date: Date
-fontsize: 12pt
-output: pdf_document
-header-includes:
-    - \usepackage{"/home/alal/tex_templates/lal_default"}
----
-
-```{r header, echo=FALSE,include=FALSE}
+```{r, echo=FALSE, include=FALSE}
 ####################################################
 rm(list=ls())
 if (require('LalRUtils')==F) {
@@ -22,13 +12,12 @@ sessionInfo()
 
 opts_chunk\$set(cache=TRUE, autodep=TRUE, cache.comments=FALSE,
                message=FALSE, warning=FALSE)
-```
 
-## ${2:Section_Header}
+```
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>RMDHeader</tabTrigger>
+    <tabTrigger>RMDTop</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <scope>source.r, text.html.markdown.rmarkdown </scope>
+    <scope>text.html.markdown.rmarkdown, source.r </scope>
 </snippet>

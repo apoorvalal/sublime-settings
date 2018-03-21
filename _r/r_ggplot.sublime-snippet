@@ -6,5 +6,5 @@ ggplot(data = ${1:data}) +
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>GgplotShell</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+	<scope>source.r,text.html.markdown.rmarkdown</scope>
 </snippet>

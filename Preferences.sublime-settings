@@ -1,9 +1,14 @@
 {
+	"added_words":
+	[
+		"externality",
+		"copayment"
+	],
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/User/SublimeLinter/Tomorrow_Night_Bright (SL).tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Tomorrow_Night_Bright.tmTheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -14,13 +19,13 @@
 		"no_italic",
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Pywin32",
-		"StataEditor",
-		"Markdown"
+		"StataEditor"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,

@@ -3,15 +3,18 @@
 ---
 # title: ${1:TitleOfDocument}
 author: ${2:Apoorva Lal}
-date: ${3:Date}
+# date: ${3:Date}
 geometry: "margin=1in"
 output: pdf_document
 fontsize: 12pt
+indent: true
+bibliography: /home/alal/Dropbox/MyLibrary.bib
+csl: econometrica.csl
 header-includes:
     - \usepackage{fancyhdr}
     - \usepackage{"/home/alal/tex_templates/lal_default"}
     - \pagestyle{fancy}
-    - \lhead[CO,LE]{${2:Apoorva Lal}, ${1:TitleOfDocument}}
+    - \lhead[CO,LE]{${2:Apoorva Lal}}
 ---
 # ${1:TitleOfDocument}
 ## ${2:Apoorva Lal}
@@ -20,5 +23,5 @@ header-includes:
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>texyaml</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <scope>text.html.markdown</scope>
+    <scope>text.html.markdown, text.html.markdown.rmarkdown </scope>
 </snippet>
