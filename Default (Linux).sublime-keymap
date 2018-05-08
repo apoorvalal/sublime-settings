@@ -68,13 +68,12 @@
 
   // latex - .tex
   // Fractions
-  { "keys": ["ctrl+\\"],"command": "insert",
+  { "keys": ["ctrl+shift+\\"],"command": "insert",
     "context":  [
       {"key": "selector",
       "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
     "args": {"contents": "\\frac{${1:above}}{${2:below}}"}},
-
   // Exponentiate
   { "keys": ["ctrl+["],"command": "insert",
     "context":  [
@@ -93,8 +92,9 @@
       {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
     "args": {"contents": "\\left( \\frac{${1:above}}{${2:below}} \\right)"}},
+
   // general overset/tilde/bar/hat
-  {"keys": ["ctrl+shift++\\"],
+  {"keys": ["ctrl+\\"],
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
@@ -102,13 +102,12 @@
 
   // markdown - .md
     // Fractions
-  { "keys": ["ctrl+\\"],"command": "insert",
+  { "keys": ["ctrl+shift+\\"],"command": "insert",
     "context":  [
       {"key": "selector",
       "operator": "equal", "operand": "text.html.markdown"}],
     "command": "insert_snippet",
     "args": {"contents": "\\frac{${1:above}}{${2:below}}"}},
-
   // Exponentiate
   { "keys": ["ctrl+["],"command": "insert",
     "context":  [
@@ -128,7 +127,7 @@
     "command": "insert_snippet",
     "args": {"contents": "\\left( \\frac{${1:above}}{${2:below}} \\right)"}},
   // general overset/tilde/bar/hat
-  {"keys": ["ctrl+shift++\\"],
+  {"keys": ["ctrl+\\"],
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}],
     "command": "insert_snippet",
