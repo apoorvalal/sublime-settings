@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 \documentclass{article}
-\usepackage{"/home/alal/tex_templates/lal_default"}
+\usepackage{"/home/alal/Templates/boilerplate/lal_default"}
 \begin{document}
 \begin{flushright}
 Your Name
@@ -9,7 +9,8 @@ Your Name
 \end{flushright}
 
 \begin{center}
-Homework/Paper Title
+\huge Homework/Paper Title
+\updateinfo
 \end{center}
 \end{document}
 ]]></content>

@@ -1,11 +1,14 @@
 <snippet>
 	<content><![CDATA[
-\documentclass{article}
-\usepackage{"/home/alal/tex_templates/lal_default"}
+\documentclass{amsart}
+\usepackage{"/home/alal/Templates/boilerplate/lal_default"}
+\usepackage{amsaddr}
+
 \begin{document}
 \title{Title}
 \author{Name}
 \date{Today}
+
 \maketitle
 
 \end{document}

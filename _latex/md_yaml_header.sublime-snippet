@@ -12,7 +12,7 @@ bibliography: /home/alal/Dropbox/MyLibrary.bib
 csl: econometrica.csl
 header-includes:
     - \usepackage{fancyhdr}
-    - \usepackage{"/home/alal/tex_templates/lal_default"}
+    - \usepackage{"/home/alal/Templates/boilerplate/lal_default"}
     - \pagestyle{fancy}
     - \lhead[CO,LE]{${2:Apoorva Lal}}
 ---
@@ -21,7 +21,7 @@ header-includes:
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>texyaml</tabTrigger>
+    <tabTrigger>Pdoc</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>text.html.markdown, text.html.markdown.rmarkdown </scope>
 </snippet>
