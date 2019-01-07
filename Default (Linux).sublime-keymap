@@ -99,7 +99,7 @@
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
-    "args": {"contents": "${1:above}{${2:below}}"}},
+    "args": {"contents": "\\\\${1:above}{${2:below}}"}},
 
   // markdown - .md
     // Fractions
@@ -132,7 +132,7 @@
     "context":  [
       {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}],
     "command": "insert_snippet",
-    "args": {"contents": "${1:above}{${2:below}}"}},
+    "args": {"contents": "\\\\${1:above}{${2:below}}"}},
 
 
   //////////////////////////////////

@@ -125,6 +125,7 @@
 	"preview_math_template_packages": [
 		"\\usepackage{amsmath}",
 		"\\usepackage{amssymb}",
+    "\\usepackage{\"/home/alal/Templates/boilerplate/lal_default\"}",
 		"\\IfFileExists{latexsym.sty}{\\usepackage{latexsym}}{}",
 		"\\IfFileExists{mathtools.sty}{\\usepackage{mathtools}}{}"
 	],
