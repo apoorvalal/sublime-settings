@@ -1,5 +1,4 @@
 [
-  { "keys": ["ctrl+alt+enter"], "command": "plain_tasks_complete","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
     // wrap text at 70 lines
   { "keys": ["alt+q"], "command": "wrap_lines_plus","args": {"width": 70}},
   //////////////////////////////////
@@ -48,21 +47,26 @@
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
   "args": {"characters": "%>%"}},
-  {"keys": ["ctrl+shift+\\"],"command": "insert",
+
+  {"keys": ["ctrl+shift+alt+n"],"command": "insert",
     "context" : [{
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
   "args": {"characters": "%<>%"}},
-  {"keys": ["ctrl+shift+="],"command": "insert",
+
+  {"keys": ["ctrl+shift+["],"command": "insert",
    "context" : [{
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
    "args": {"characters": "<-"}},
-  {"keys": ["ctrl+shift+-"],"command": "insert",
+
+  {"keys": ["ctrl+shift+]"],"command": "insert",
    "context" : [{
       "key" : "selector", "operator": "equal", "operand": "source.r"
     }],
    "args": {"characters": "->"}},
+   {"keys": ["ctrl+shift+;"],"command": "insert",
+   "args": {"characters": "#+#%%"}},
   //////////////////////////////////
   // LaTex shortcuts (double to support markdown, can't get
   // regex to work)
