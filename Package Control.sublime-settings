@@ -13,7 +13,6 @@
 		"Fortran",
 		"Gist",
 		"Git",
-		"GitGutter",
 		"Hermes",
 		"Julia",
 		"LaTeX Word Count",
@@ -38,6 +37,7 @@
 		"Sync View Scroll",
 		"TerminalView",
 		"Text Pastry",
+		"UnicodeMath",
 		"WordCount",
 		"Wrap Plus"
 	]

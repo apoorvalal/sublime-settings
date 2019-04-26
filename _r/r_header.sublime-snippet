@@ -2,12 +2,9 @@
 	<content><![CDATA[
 ####################################################
 rm(list=ls())
-if (require('LalRUtils')==F) {
-    library(devtools)
-    devtools::install_github("apoorvalal/LalRUtils")
-}
-load_or_install(c('tidyverse','magrittr','Hmisc','data.table')) #, "${1:lib2}"))
-sessionInfo()
+library(LalRUtils)
+load_or_install(c('tidyverse','magrittr',
+    'data.table', 'rio')) #, "lib2"))
 ####################################################
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
