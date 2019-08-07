@@ -27,6 +27,7 @@
 	[
 		"Markdown",
 		"Pywin32",
+		"SideBarEnhancements",
 		"StataEditor"
 	],
 	"line_padding_bottom": 1,
