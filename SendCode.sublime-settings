@@ -1,7 +1,8 @@
 {
-"r" : {
-        "prog": "tmux",
-        // turn brackted paste mode on if rtichoke or readline 7.0 is used
-        "bracketed_paste_mode": true
-    }
+	"prog": "tmux",
+	"r":
+	{
+		"bracketed_paste_mode": true,
+		"prog": "tmux"
+	}
 }
