@@ -5,13 +5,15 @@
 		"copayment",
 		"patrilineal",
 		"patrilocal",
-		"gangetic"
+		"gangetic",
+		"payoff",
+		"endogeneity"
 	],
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/Colorsublime - Themes/Brogrammer.tmTheme",
+	"color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -21,7 +23,7 @@
 		"no_bold",
 		"no_italic"
 	],
-	"font_size": 11,
+	"font_size": 14,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -32,16 +34,6 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"material_theme_accent_cyan": true,
-	"material_theme_accent_scrollbars": true,
-	"material_theme_bold_tab": true,
-	"material_theme_bullet_tree_indicator": true,
-	"material_theme_compact_panel": true,
-	"material_theme_compact_sidebar": true,
-	"material_theme_contrast_mode": true,
-	"material_theme_small_statusbar": true,
-	"material_theme_small_tab": true,
-	"material_theme_tabs_autowidth": true,
 	"mdpopups.sublime_user_lang_map":
 	{
 	},
@@ -53,8 +45,14 @@
 		85,
 		120
 	],
+	"skin": "User/monokai",
 	"tab_size": 2,
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
+	"theme_agila_horizontal_scrollbar_lightblue": true,
+	"theme_agila_sidebar_font_small": true,
+	"theme_agila_sidebar_large": true,
+	"theme_agila_vertical_scrollbar_lightblue": true,
+	"theme_agila_vertical_scrollbar_thinnest": true,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"ui_fix_tab_labels": true,

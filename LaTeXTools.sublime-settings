@@ -57,7 +57,7 @@
 	"command_completion": "prefixed",
 
 	// valid texfile extensions
-	"tex_file_exts": [".tex"],
+	"tex_file_exts": [".tex", ".Rnw"],
 
 	// controls whether or not syntax is automatically set to LaTeX for
 	// files that match one of the configured `tex_file_exts`
@@ -65,7 +65,7 @@
 
 	// set to true to use BibLaTeX instead of BibTex for bibliography completions
 	// can also be set on a per-project basis
-	"use_biblatex": false,
+	"use_biblatex": true,
 
 	// the mapping from the locales to the dictionaries for the
 	// `%!TEX spellcheck` directive, where the locales must be all lowercase
@@ -97,7 +97,7 @@
 	// to only preview math environment
 	// Set it to "text.tex.latex meta.environment.math"
 	// to preview every math command or environment
-	"preview_math_scope": "text.tex.latex meta.environment.math.block",
+	"preview_math_scope": "text.tex.latex meta.environment.math", // "text.tex.latex meta.environment.math.block",
 
 	// The program to compile the latex template files, possible values are
 	// pdflatex, xelatex, lualatex, latex
@@ -143,7 +143,7 @@
 	"preview_math_no_star_envs": ["displaymath"],
 
 	// The density of the preview image. The higher the density the bigger the phantom.
-	"preview_math_density": 150,
+	"preview_math_density": 200,
 	// If the image is not sharp enough increase this scale to get a better resolution.
 	// However also change the density by the same factor to keep the size.
 	"preview_math_scale_quotient": 1,
@@ -188,42 +188,12 @@
 	"temp_files_exts": [
 		".blg",".bbl",".aux",".log",".brf",".nlo",".out",".dvi",".ps",
 		".lof",".toc",".fls",".fdb_latexmk",".pdfsync",".synctex.gz",
-		".ind",".ilg",".idx",".run.xml", ".bcf", ".nav", ".snm"
+		".ind",".ilg",".idx",".run.xml", ".bcf", ".nav", ".snm", ".tdo"
 	],
 	// Folders that are not traversed when deleting temp files
 	"temp_files_ignored_folders": [
 		".git", ".svn", ".hg"
 	],
-
-// ------------------------------------------------------------------
-// Platform settings: adapt as needed for your machine
-// ------------------------------------------------------------------
-
-	"osx": 	{
-		// Path used when invoking tex & friends; MUST include $PATH
-		"texpath" : "$PATH:/Library/TeX/texbin:/usr/texbin:/usr/local/bin:/opt/local/bin"
-		// Path to PDF viewer, if needed
-		// TODO think about it. Also, maybe configure it here!
-	},
-
-
-	"windows": {
-		// Path used when invoking tex & friends; "" is fine for MiKTeX
-		// For TeXlive 2011 (or other years) use
-		// "texpath" : "C:\\texlive\\2011\\bin\\win32;$PATH",
-		"texpath" : "",
-		// TeX distro: "miktex" or "texlive"
-		"distro" : "miktex",
-		// Command to invoke Sumatra. If blank, "SumatraPDF.exe" is used (it has to be on your PATH)
-		"sumatra": "",
-		// Command to invoke Sublime Text. Used if the keep_focus toggle is true.
-		// If blank, "subl.exe" or "sublime_text.exe" will be used.
-		"sublime_executable": "",
-		// how long (in seconds) to wait after the jump_to_pdf command completes
-		// before switching focus back to Sublime Text. This may need to be
-		// adjusted depending on your machine and configuration.
-		"keep_focus_delay": 0.5
-	},
 
 	"linux" : {
 		// Path used when invoking tex & friends; MUST include $PATH
@@ -325,7 +295,7 @@
 	// if you do so, however, note that the path will be interpreted
 	// relative to the location of your project file
 
-	"output_directory": "",
+	"output_directory": "<<project>>",
 
 	// OPTION: "jobname"
 	// Specifies the jobname to use when building the document
@@ -486,7 +456,7 @@
 	//					Windows
 	//
 	// "zathura"		uses Zathura to open the pdf
-	"viewer": "okular",
+	"viewer": "zathura",
 
 	// OPTION: "viewer_settings"
 	// Specify viewer-dependent settings and preferences
