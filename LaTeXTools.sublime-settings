@@ -143,7 +143,7 @@
 	"preview_math_no_star_envs": ["displaymath"],
 
 	// The density of the preview image. The higher the density the bigger the phantom.
-	"preview_math_density": 200,
+	"preview_math_density": 190,
 	// If the image is not sharp enough increase this scale to get a better resolution.
 	// However also change the density by the same factor to keep the size.
 	"preview_math_scale_quotient": 1,
@@ -456,7 +456,7 @@
 	//					Windows
 	//
 	// "zathura"		uses Zathura to open the pdf
-	"viewer": "zathura",
+	"viewer": "okular",
 
 	// OPTION: "viewer_settings"
 	// Specify viewer-dependent settings and preferences

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+```{r fig-fullwidth, fig.width = 10, fig.height = 3, fig.fullwidth = TRUE, fig.cap = "A full width figure."}
+ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=am)) +
+    facet_wrap(~ factor(cyl)) + theme(legend.position="bottom") +
+    ggtitle("Full Width Figure")
+```
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>FullWidth</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.markdown.rmarkdown </scope>
+</snippet>

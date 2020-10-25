@@ -7,7 +7,21 @@
 		"patrilocal",
 		"gangetic",
 		"payoff",
-		"endogeneity"
+		"endogeneity",
+		"Unconfoundedness",
+		"confounders",
+		"Setup",
+		"Frontdoor",
+		"backdoor",
+		"posttreatment",
+		"confounder",
+		"unconfoundedness",
+		"regressors",
+		"partialling",
+		"unconfounded",
+		"Bayes",
+		"Distributionally",
+		"Ignorability"
 	],
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
@@ -23,7 +37,7 @@
 		"no_bold",
 		"no_italic"
 	],
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
