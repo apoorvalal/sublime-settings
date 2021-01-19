@@ -1,5 +1,5 @@
 [
-  { "keys": ["ctrl+tab"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+  { "keys": ["shift+tab"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
   // terminus
     {
         "keys": ["alt+`"], "command": "toggle_terminus_panel"

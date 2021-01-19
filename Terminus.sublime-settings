@@ -1,8 +1,10 @@
 {
- // specific dict
-    "default_config": {
-        "linux": null,    // login shell
-        "osx": null,      // login shell
-        "windows": "Command Prompt"
-    }
+	"256color": true,
+	"default_config":
+	{
+		"linux": null,
+		"osx": null,
+		"windows": "Command Prompt"
+	},
+	"theme": "brogrammer"
 }

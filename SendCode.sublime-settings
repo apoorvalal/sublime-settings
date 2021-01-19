@@ -1,8 +1,13 @@
 {
-	"prog": "tmux",
+	"prog": "terminus",
 	"r":
 	{
 		"bracketed_paste_mode": true,
-		"prog": "tmux"
+		"prog": "terminus"
+	},
+	"rmd":
+	{
+		"bracketed_paste_mode": false,
+		"prog": "terminus"
 	}
 }

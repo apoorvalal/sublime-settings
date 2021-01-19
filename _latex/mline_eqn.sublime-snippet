@@ -6,5 +6,5 @@ ${3} & = ${4} \\\\
 \end{align*}
 ]]></content>
 	<tabTrigger>Eqn</tabTrigger>
-	<scope>text.tex.latex</scope>
+	<scope>text.tex.latex, text.html.markdown.rmarkdown </scope>
 </snippet>
