@@ -94,75 +94,29 @@
     }],
    "args": {"characters": " `:=`() "}},
   //////////////////////////////////
-  // LaTex shortcuts (double to support markdown, can't get
-  // regex to work)
-
-  // latex - .tex
-  // Fractions
-  { "keys": ["ctrl+shift+\\"],"command": "insert",
-    "context":  [
-      {"key": "selector",
-      "operator": "equal", "operand": "text.tex.latex"}],
-    "command": "insert_snippet",
-    "args": {"contents": "\\\\${1:frac}{${2:above}}{${3:below}}"}},
+  // LaTex shortcuts
+  //////////////////////////////////
+  // latex cmds
   // Exponentiate
   { "keys": ["ctrl+["],"command": "insert",
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
     "args": {"contents": "${1:above}^{${2:below}}"}},
   // Subscript
   { "keys": ["ctrl+]"],
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
     "args": {"contents": "${1:above}_{${2:below}}"}},
     // general overset/tilde/bar/hat
   {"keys": ["ctrl+\\"],
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
     "command": "insert_snippet",
     "args": {"contents": "\\\\${1:above}{${2:below}}"}},
-   // general function argument
-    {"keys": ["ctrl+."],
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-    "command": "insert_snippet",
-    "args": {"contents": "\\\\${1:above}\\Bigpar{${2:below}}"}},
-  // markdown - .md
     // Fractions
   { "keys": ["ctrl+shift+\\"],"command": "insert",
-    "context":  [
-      {"key": "selector",
-      "operator": "equal", "operand": "text.html.markdown"}],
     "command": "insert_snippet",
     "args": {"contents": "\\\\${1:frac}{${2:above}}{${3:below}}"}},
-  // Exponentiate
-  { "keys": ["ctrl+["],"command": "insert",
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}],
+   // general function argument
+    {"keys": ["ctrl+."],
     "command": "insert_snippet",
-    "args": {"contents": "${1:above}^{${2:below}}"}},
-  // Subscript
-  { "keys": ["ctrl+]"],
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}],
-    "command": "insert_snippet",
-    "args": {"contents": "${1:above}_{${2:below}}"}},
-  // Big Parentheses
-  { "keys": ["ctrl+."],
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}],
-    "command": "insert_snippet",
-    "args": {"contents": "\\left( \\\\frac{${1:above}}{${2:below}} \\right)"}},
-  // general overset/tilde/bar/hat
-  {"keys": ["ctrl+\\"],
-    "context":  [
-      {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}],
-    "command": "insert_snippet",
-    "args": {"contents": "\\\\${1:above}{${2:below}}"}},
-
-
+    "args": {"contents": "\\\\${1:above}\\Bigpar{${2:below}}"}},
   //////////////////////////////////
   // resolves Text-Pastry ANF conflict
   { "keys": ["ctrl+alt+t"], "command": "text_pastry_show_command_line", "args": { "text": "" } },

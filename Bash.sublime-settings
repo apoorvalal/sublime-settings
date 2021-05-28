@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"Rnw"
+		".aliases",
+		".zshrc"
 	]
 }

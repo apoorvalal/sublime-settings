@@ -1,10 +1,8 @@
 <snippet>
   <content><![CDATA[
-\if\solutions1
-  \textcolor{red}{
-    ${1}
-  }
-\fi
+\ifsol{\color{red}
+  ${1:first}
+}\fi
     ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>PsetSol</tabTrigger>
